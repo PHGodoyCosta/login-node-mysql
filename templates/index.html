@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua conta</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sua conta hipotetica :)</h1>
+    <p>Nada por enquanto... :)</p>
+    <script>
+        const cores = ["red", "green", "blue", "orange", "pink"]
+        const p = document.querySelector("p")
+        
+        function changeColor() {
+            var cor = Math.round(Math.random()*5)
+            p.setAttribute("style", `color: ${cores[cor]};`)
+        }
+        setInterval(changeColor, 1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/../css/style.css">
+    <style>
+        #erro {
+            min-width: 100px;
+            max-width: 260px; 
+            height: 50px;
+            background-color: red;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        #msg_erro {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banco Muito dinheiro</h1>
+    <main>
+        <h2>Login</h2>
+        <form method="post">
+            <p>Email: <input type="text" id="email" name="email"></p>
+            <p>Senha: <input type="password" id="senha" name="senha"><input type="button" value="Visualizar" id="verSenha"></p>
+            <br>
+            <input type="submit" value="Entrar" id="enter" name="enter">
+            <p>Não tem uma conta? <a href="/../newAccount">Crie agora!</a></p>
+        </form>
+    </main>
+    <footer>
+        <p>Banco Muito dinheiro</p>
+    </footer>
+    <script src="/../js/index.js"></script>
+</body>
+</html>
