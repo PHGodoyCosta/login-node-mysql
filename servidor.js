@@ -15,9 +15,9 @@ eventos.on("log", () => {console.log("Macaco novo")})
 
 function sqli(variavel, spaces) {
     variavel = String(variavel)
-    var caracteres = ["-", "'", '"', "/", "\\", ")", "(", " "]
+    var caracteres = ["-", "'", '"', "/", "\\", ")", "(", " ", "<", ">", "&", "$"]
     if (spaces) {
-        var caracteres = ["-", "'", '"', "/", "\\", ")", "("]
+        var caracteres = ["-", "'", '"', "/", "\\", ")", "(", "<", ">", "&", "$"]
     }
     for (let c in caracteres) {
         if (variavel.indexOf(caracteres[c]) != -1) {
